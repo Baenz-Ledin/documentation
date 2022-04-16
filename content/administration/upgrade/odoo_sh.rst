@@ -45,7 +45,7 @@ upgraded dump:
 * Merge or commit the upgraded custom code in the production branch
 
 If anything goes wrong, remember you can restore a backup. The platform will always make one before
-you make any Odoo.sh operation on the production database. If the restored backup comes from a
+you make any Odoo.sh operation on the production database - BUT NOT on a staging branch. All prior work on a staging branch will be overwritten and lost forever if you do not make a manual backup before the import --> open a separate staging branch for test imports, or make a manual backup before importing. Download the manual backup, as it will only be kept for 30 days on odoo.sh If the restored backup comes from a
 previous version, the platform will detect it and change the project's Odoo version back if it needs
 to.
 
